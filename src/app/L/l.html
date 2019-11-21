@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es">
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1, maxium-scale=1, minimum-scalae=1">
+    <meta charset="utf-8" />
+    <meta name="description" content="P&aacute;gina principal e inicio de sesi&&oacute;"/><!--Específica la descripción de la página-->
+    <link href="Login.component.css" rel="stylesheet" type="text/css"/>
+    <title>Principal Login</title>
+  </head>
+
+  <body>
+    <header>
+      <input type="checkbox" id="btn-menu">
+      <label for="btn-menu"><img src="Imagenes/iconomenu.png" width="30px" alt="menu">
+    </label>
+
+      <nav class="menu">
+        <ul>
+          <li><a href=""></a>¿Qui&eacute;nes somos?</li>
+          <li><a href=""></a>¿Para qu&eacute; necesito hacer esto?</li>
+          <li><a href=""></a>Aviso de privacidad</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="pantalla-dividida">
+
+      <div class="info"><!--Lado izquierdo -->
+        <p>Aqu&iacute; va informaci&oacute;n general</p>
+      </div>
+
+      <div class="loginBox"><!--Lado derecho -->
+
+        <img class="avatar" src="Imagenes/login.png" alt="login" content="width=device-width, user-scalable=no,initial-scale=1, maxium-scale=1, minimum-scalae=1">
+
+
+        <form (submit)="loginUser($event)">
+
+          <div class="input" type="text" ><!--Correo-->
+            <label>Email</label>
+            <input type="email">
+          </div>
+
+          <div class="input" type="password"><!--Contraseña-->
+            <label>Password</label>
+            <input type="password">
+          </div>
+
+          <p>
+            <a class="go" href="Iniciar.html">Iniciar sesi&oacute;n</a><!--Boton GO-->
+          </p>
+
+          <br>
+
+          <p>
+            <a class="boton" href="Registro.html">Crear cuenta </a><!--Boton crear cuenta-->
+          </p>
+
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
